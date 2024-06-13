@@ -52,6 +52,17 @@
                 <a href="https://github.com/ngonidzashewas"><i class='bx bxl-github'></i></a> 
             </div>
   <a href="https://github.com/ngonidzashewas/ngonidzashewas.github.io/raw/main/Resume.pdf" class="btn">Download CV</a>
+            <button id="viewCVButton" class="btn">View CV</button>
+<iframe id="pdfViewer" width="100%" height="600px"></iframe>
+
+<script>
+  const viewButton = document.getElementById('viewCVButton');
+  const pdfViewer = document.getElementById('pdfViewer');
+
+  viewButton.addEventListener('click', () => {
+    pdfViewer.src = 'https://github.com/ngonidzashewas/ngonidzashewas.github.io/raw/main/Resume.pdf';
+  });
+</script>
         </div>
 
         <div>
