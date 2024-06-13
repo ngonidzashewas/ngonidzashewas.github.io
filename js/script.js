@@ -75,6 +75,13 @@ ScrollReveal({
     delay: 200
 });
 
+  const button = document.getElementById('openCVButton');
+  const pdfViewer = document.getElementById('pdfViewer');
+
+  button.addEventListener('click', () => {
+    pdfViewer.src = 'Resume.pdf';
+  });
+
 ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
 ScrollReveal().reveal('.home-img img, .services-container, .portfolio-box, .testimonial-wrapper, .contact form', { origin: 'bottom' });
 ScrollReveal().reveal('.home-content h1, .about-img img', { origin: 'left' });
