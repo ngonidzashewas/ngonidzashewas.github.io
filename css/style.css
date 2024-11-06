@@ -329,6 +329,27 @@ span {
     margin: 2rem 0 3rem;
 }
 
+.skills-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 7px 0;
+}
+
+.skills-list li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+.skills-list li:before {
+    content: "→";  
+    color: #228B22; /* Change color as needed */
+    position: absolute;
+    left: 8px;
+    font-weight: bold;
+}
+
 .services {
     min-height: auto;
     padding-bottom: 10rem;
